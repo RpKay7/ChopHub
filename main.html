@@ -1,0 +1,776 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="ChopHub - Delicious Nigerian meals made fresh, served hot and made for you.">
+
+    <title>ChopHub | Taste the Good Life</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header id="site-header">
+        <nav>
+            <a href="#home" class="logo">ChopHub</a>
+
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="cart-btn" aria-label="Open shopping cart">
+                    <span class="cart-icon">🛒</span>
+                    <span>Cart</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+
+                <button class="order-btn" id="nav-order-btn">Order Now</button>
+
+                <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Open navigation menu">
+                    &#9776;
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="small-heading">WELCOME TO CHOPHUB</p>
+
+                <h1>
+                    TASTE THE
+                    <span>GOOD LIFE.</span>
+                </h1>
+
+                <p>
+                    Delicious Nigerian meals made fresh,
+                    served hot and made for you.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="primary-btn">Explore Menu</a>
+                    <a href="#about" class="secondary-btn">Our Story</a>
+                </div>
+
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <strong>10k+</strong>
+                        <span>Happy Customers</span>
+                    </div>
+
+                    <div class="trust-divider"></div>
+
+                    <div class="trust-item">
+                        <strong>4.9</strong>
+                        <span>Customer Rating ★</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FEATURED MEALS -->
+        <section class="featured-section">
+            <div class="section-heading">
+                <p class="small-heading">CUSTOMER FAVOURITES</p>
+
+                <h2>Worth making room for</h2>
+
+                <p>
+                    A few favourites from the ChopHub kitchen,
+                    made fresh, served generously and built around
+                    the flavours you already love.
+                </p>
+            </div>
+
+            <div class="food-grid">
+
+                <!-- SMOKY JOLLOF RICE -->
+                <article class="food-card">
+                    <div class="food-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1665556899022-9761f95769e5?auto=format&fit=crop&w=900&q=85"
+                            alt="A plate of Nigerian jollof rice"
+                            loading="lazy">
+
+                        <span class="food-badge">Bestseller</span>
+                    </div>
+
+                    <div class="food-info">
+                        <div class="food-rating">
+                            ★★★★★ <span>4.9</span>
+                        </div>
+
+                        <h3>Smoky Jollof Rice</h3>
+
+                        <p>
+                            Party-style jollof rice cooked
+                            with rich spices and smoky flavour.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>&#8358;4,500</strong>
+
+                            <button class="add-btn"
+                                data-name="Smoky Jollof Rice"
+                                data-price="4500">
+                                Add +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- GRILLED CHICKEN -->
+                <article class="food-card">
+                    <div class="food-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=85"
+                            alt="Grilled chicken served with sauce"
+                            loading="lazy">
+
+                        <span class="food-badge">Popular</span>
+                    </div>
+
+                    <div class="food-info">
+                        <div class="food-rating">
+                            ★★★★★ <span>4.8</span>
+                        </div>
+
+                        <h3>Grilled Chicken</h3>
+
+                        <p>
+                            Tender grilled chicken served
+                            with our spicy signature sauce.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>&#8358;5,000</strong>
+
+                            <button class="add-btn"
+                                data-name="Grilled Chicken"
+                                data-price="5000">
+                                Add +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- BEEF BURGER -->
+                <article class="food-card">
+                    <div class="food-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=85"
+                            alt="Beef burger with fresh toppings"
+                            loading="lazy">
+
+                        <span class="food-badge">Fan Favourite</span>
+                    </div>
+
+                    <div class="food-info">
+                        <div class="food-rating">
+                            ★★★★★ <span>4.7</span>
+                        </div>
+
+                        <h3>ChopHub Burger</h3>
+
+                        <p>
+                            Loaded beef burger with fresh vegetables
+                            and our special sauce.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>&#8358;4,000</strong>
+
+                            <button class="add-btn"
+                                data-name="ChopHub Burger"
+                                data-price="4000">
+                                Add +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- FULL MENU -->
+        <section id="menu" class="menu-section">
+            <div class="section-heading">
+                <p class="small-heading">OUR MENU</p>
+
+                <h2>A menu worth exploring</h2>
+
+                <p>
+                    From familiar Nigerian favourites to quick bites
+                    and cold drinks, take your pick and make it your own.
+                </p>
+            </div>
+
+
+            <!-- MENU SEARCH -->
+            <div class="menu-search">
+                <div class="search-box">
+                    <span class="search-icon">🔎</span>
+
+                    <input
+                        type="search"
+                        id="menu-search"
+                        placeholder="Search for a meal..."
+                        aria-label="Search menu">
+
+                    <button id="clear-search"
+                        class="clear-search"
+                        aria-label="Clear search">
+                        &times;
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- MENU CATEGORIES -->
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">
+                    All
+                </button>
+
+                <button class="category-btn" data-category="rice">
+                    Rice &amp; Sides
+                </button>
+
+                <button class="category-btn" data-category="main">
+                    Main Dishes
+                </button>
+
+                <button class="category-btn" data-category="fast-food">
+                    Fast Food
+                </button>
+
+                <button class="category-btn" data-category="drinks">
+                    Drinks
+                </button>
+            </div>
+
+
+            <!-- MENU ITEMS -->
+            <div class="menu-grid" id="menu-grid">
+
+                <!-- JOLLOF RICE -->
+                <article class="menu-item"
+                    data-category="rice"
+                    data-name="Jollof Rice">
+
+                    <div class="menu-item-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1665556899022-9761f95769e5?auto=format&fit=crop&w=700&q=85"
+                            alt="Nigerian jollof rice"
+                            loading="lazy">
+
+                        <span class="menu-badge">Popular</span>
+                    </div>
+
+                    <div class="menu-item-info">
+                        <div class="menu-rating">★★★★★</div>
+
+                        <h3>Jollof Rice</h3>
+
+                        <p>Smoky Nigerian party jollof.</p>
+
+                        <strong>&#8358;3,000</strong>
+                    </div>
+
+                    <button class="add-btn"
+                        data-name="Jollof Rice"
+                        data-price="3000">
+                        Add +
+                    </button>
+                </article>
+
+
+                <!-- FRIED RICE -->
+                <article class="menu-item"
+                    data-category="rice"
+                    data-name="Fried Rice">
+
+                    <div class="menu-item-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=85"
+                            alt="Fried rice with vegetables"
+                            loading="lazy">
+                    </div>
+
+                    <div class="menu-item-info">
+                        <div class="menu-rating">★★★★☆</div>
+
+                        <h3>Fried Rice</h3>
+
+                        <p>Fried rice with fresh vegetables.</p>
+
+                        <strong>&#8358;3,500</strong>
+                    </div>
+
+                    <button class="add-btn"
+                        data-name="Fried Rice"
+                        data-price="3500">
+                        Add +
+                    </button>
+                </article>
+
+
+                <!-- PEPPERED CHICKEN -->
+                <article class="menu-item"
+                    data-category="main"
+                    data-name="Peppered Chicken">
+
+                    <div class="menu-item-image">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Bowl_full_of_peppered_chickens.jpg"
+                            alt="Nigerian peppered chicken"
+                            loading="lazy">
+
+                        <span class="menu-badge">Spicy</span>
+                    </div>
+
+                    <div class="menu-item-info">
+                        <div class="menu-rating">★★★★★</div>
+
+                        <h3>Peppered Chicken</h3>
+
+                        <p>Spicy chicken tossed in pepper sauce.</p>
+
+                        <strong>&#8358;4,500</strong>
+                    </div>
+
+                    <button class="add-btn"
+                        data-name="Peppered Chicken"
+                        data-price="4500">
+                        Add +
+                    </button>
+                </article>
+
+
+                <!-- BEEF BURGER -->
+                <article class="menu-item"
+                    data-category="fast-food"
+                    data-name="Beef Burger">
+
+                    <div class="menu-item-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=85"
+                            alt="Juicy beef burger with toppings"
+                            loading="lazy">
+                    </div>
+
+                    <div class="menu-item-info">
+                        <div class="menu-rating">★★★★★</div>
+
+                        <h3>Beef Burger</h3>
+
+                        <p>Juicy beef burger with fresh toppings.</p>
+
+                        <strong>&#8358;4,000</strong>
+                    </div>
+
+                    <button class="add-btn"
+                        data-name="Beef Burger"
+                        data-price="4000">
+                        Add +
+                    </button>
+                </article>
+
+
+                <!-- LOADED FRIES -->
+                <article class="menu-item"
+                    data-category="fast-food"
+                    data-name="Loaded Fries">
+
+                    <div class="menu-item-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=85"
+                            alt="Crispy golden fries"
+                            loading="lazy">
+                    </div>
+
+                    <div class="menu-item-info">
+                        <div class="menu-rating">★★★★☆</div>
+
+                        <h3>Loaded Fries</h3>
+
+                        <p>Crispy fries loaded with chicken.</p>
+
+                        <strong>&#8358;3,500</strong>
+                    </div>
+
+                    <button class="add-btn"
+                        data-name="Loaded Fries"
+                        data-price="3500">
+                        Add +
+                    </button>
+                </article>
+
+
+                <!-- SMOOTHIE: PHOTO ONLY -->
+                <article class="menu-item"
+                    data-category="drinks"
+                    data-name="Smoothie">
+
+                    <div class="menu-item-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=700&q=85"
+                            alt="Fresh fruit smoothie in a glass"
+                            loading="lazy">
+                    </div>
+
+                    <div class="menu-item-info">
+                        <div class="menu-rating">★★★★★</div>
+
+                        <h3>Smoothie</h3>
+
+                        <p>Ice-cold and refreshing fruit smoothie.</p>
+
+                        <strong>&#8358;3,000</strong>
+                    </div>
+
+                    <button class="add-btn"
+                        data-name="Smoothie"
+                        data-price="3000">
+                        Add +
+                    </button>
+                </article>
+
+
+                <!-- NO SEARCH RESULTS -->
+                <div class="no-results" id="no-results">
+                    <div class="no-results-icon">🔎</div>
+
+                    <h3>No meals found</h3>
+
+                    <p>Try searching for another meal.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT CHOPHUB -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <p class="small-heading">ABOUT CHOPHUB</p>
+
+                <h2>Built around good food</h2>
+
+                <p>
+                    At ChopHub, we believe great food doesn't need
+                    to be complicated. It needs good ingredients,
+                    proper seasoning and the kind of care you can
+                    taste from the first bite.
+                </p>
+
+                <p>
+                    We bring together the comfort of Nigerian
+                    favourites and the energy of a modern food spot,
+                    creating a place where good meals and good
+                    company naturally belong.
+                </p>
+
+                <a href="#menu" class="secondary-btn">
+                    Explore Our Menu
+                </a>
+            </div>
+
+            <div class="about-highlight">
+                <div>
+                    <strong>5+</strong>
+                    <span>Years of flavour</span>
+                </div>
+
+                <div>
+                    <strong>10k+</strong>
+                    <span>Happy customers</span>
+                </div>
+
+                <div>
+                    <strong>30+</strong>
+                    <span>Menu options</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- WHY CHOOSE US -->
+        <section class="why-section">
+            <div class="section-heading">
+                <p class="small-heading">WHY CHOPHUB?</p>
+                <h2>The details matter.</h2>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">&#x1F373;</div>
+
+                    <h3>Freshly Prepared</h3>
+
+                    <p>
+                        Every plate starts in the kitchen,
+                        not a freezer.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">&#x26A1;</div>
+
+                    <h3>Fast Service</h3>
+
+                    <p>
+                        We get your food ready quickly without
+                        compromising on quality.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">&#x2764;</div>
+
+                    <h3>Made For You</h3>
+
+                    <p>
+                        Whether you're eating in or grabbing
+                        a quick bite, your order deserves
+                        the same attention.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- CUSTOMER REVIEWS -->
+        <section id="reviews" class="reviews-section">
+            <div class="section-heading">
+                <p class="small-heading">CUSTOMER LOVE</p>
+
+                <h2>Don't just take our word for it</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <article class="review-card">
+                    <div class="stars">
+                        &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </div>
+
+                    <p>
+                        "The jollof rice is honestly one of
+                        the best I've had in Lagos."
+                    </p>
+
+                    <strong>- Mr Alex O.</strong>
+                </article>
+
+                <article class="review-card">
+                    <div class="stars">
+                        &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </div>
+
+                    <p>
+                        "Fast delivery, generous portions and
+                        the food was still hot."
+                    </p>
+
+                    <strong>- Mrs Felicia</strong>
+                </article>
+
+                <article class="review-card">
+                    <div class="stars">
+                        &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </div>
+
+                    <p>
+                        "ChopHub has officially become my
+                        go-to spot for lunch."
+                    </p>
+
+                    <strong>- Favour I.</strong>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- LOCATION & HOURS -->
+        <section class="location-section">
+            <div class="location-content">
+                <p class="small-heading">FIND US</p>
+
+                <h2>
+                    Come hungry.
+                    <span>Leave satisfied.</span>
+                </h2>
+
+                <p>Lagos, Nigeria.</p>
+
+                <a href="tel:+2347068414697" class="location-phone">
+                    0706 841 4697
+                </a>
+            </div>
+
+            <div class="opening-hours">
+                <h3>Opening Hours</h3>
+
+                <p>
+                    Monday - Friday
+                    <span>8:00 AM - 8:00 PM</span>
+                </p>
+
+                <p>
+                    Saturday
+                    <span>9:00 AM - 10:00 PM</span>
+                </p>
+
+                <p>
+                    Sunday
+                    <span>12:00 PM - 9:00 PM</span>
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ORDER CTA -->
+        <section id="contact" class="contact-section">
+            <p class="small-heading">
+                YOUR NEXT FAVOURITE MEAL IS WAITING
+            </p>
+
+            <h2>
+                Take a look at the menu, pick your plate
+                and let's make your next meal a good one.
+            </h2>
+
+            <p>
+                Place your order and let us handle the rest.
+            </p>
+
+            <div class="contact-buttons">
+                <button class="primary-btn" id="whatsapp-btn">
+                    Order on WhatsApp
+                </button>
+
+                <a href="tel:+2347068414697" class="secondary-btn">
+                    Call Us
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- CART OVERLAY -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+
+    <!-- CART DRAWER -->
+    <aside class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <div>
+                <p class="small-heading">YOUR ORDER</p>
+                <h2>Your Cart</h2>
+            </div>
+
+            <button class="cart-close"
+                id="cart-close"
+                aria-label="Close cart">
+                &times;
+            </button>
+        </div>
+
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart" id="empty-cart">
+                <div class="empty-cart-icon">🛒</div>
+
+                <h3>Your cart is empty</h3>
+
+                <p>
+                    Add something delicious from
+                    the menu to get started.
+                </p>
+
+                <button class="primary-btn" id="empty-cart-btn">
+                    Browse Menu
+                </button>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-summary">
+                <div>
+                    <span>Subtotal</span>
+                    <strong id="cart-subtotal">&#8358;0</strong>
+                </div>
+
+                <div>
+                    <span>Delivery</span>
+                    <span>Calculated at checkout</span>
+                </div>
+            </div>
+
+            <button class="primary-btn checkout-btn" id="checkout-btn">
+                Order on WhatsApp
+            </button>
+        </div>
+    </aside>
+
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+
+        <span id="toast-message">
+            Added to cart
+        </span>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <a href="#home" class="logo">ChopHub</a>
+                <p>Taste the Good Life.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &#169; 2026 ChopHub. All rights reserved.
+            </p>
+
+            <p>Designed &amp; Developed by Rpkay</p>
+        </div>
+    </footer>
+
+</body>
+</html>
